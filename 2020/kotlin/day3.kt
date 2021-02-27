@@ -1,5 +1,4 @@
 import java.io.File
-import java.nio.file.Paths
 
 private fun part2(input: List<String>): Int {
     val width = input[0].length
@@ -12,7 +11,7 @@ private fun part2(input: List<String>): Int {
         }
         ctr
     }
-    return count(1,1) * count(3,1) * count(5,1) * count(7,1) * count(1,2)
+    return count(1, 1) * count(3, 1) * count(5, 1) * count(7, 1) * count(1, 2)
 }
 
 private fun part1(input: List<String>): Int {
@@ -24,7 +23,7 @@ private fun part1(input: List<String>): Int {
 }
 
 fun day3() {
-    val input = File("../../input/day3").readLines()
+    val input = File("2020/input/day3").readLines()
 
     println(part1(input))
     println(part2(input))

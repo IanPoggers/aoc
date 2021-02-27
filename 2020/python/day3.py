@@ -1,6 +1,7 @@
-input = open("../../input/day3").readlines()
+#!/bin/python3
+input = open("../input/day3").readlines()
 
-width = len(input[0])
+width = len(input[0]) - 1  # readLines adds whitespace at the end??
 xpos = 0
 ctr = 0
 
